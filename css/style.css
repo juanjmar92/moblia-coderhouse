@@ -1,0 +1,307 @@
+/*!------------GOOGLE FONTS------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+/*!------------RESET------------*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/*!------------HEADER------------*/
+
+header { 
+    font-family: 'Poppins', sans-serif;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {  
+    color: #026e52;
+    font-size: 60px;   
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 75px;
+}
+
+header nav ul li {
+    margin: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color:#026e52;  
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/*!------------MAIN------------*/
+
+main {
+    font-family: 'Poppins', sans-serif;  
+}
+
+.hero { 
+    width: 100%;
+    height: calc(100vh - 130px);
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+/*!------------ICONOS-MAIN------------*/
+
+.icons {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+.contenedor-icons {
+    display: flex;
+    justify-content: space-evenly;  
+}
+
+.contenedor-icons div {
+    font-size: 55px;
+    margin: 20px;  
+}
+
+.titulos-iconos h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.titulos-iconos p {
+    font-size: 13px;
+}
+
+.contenedor-texto-iconos {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-img-index {
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+}
+
+.contenedor-img-index img {
+    padding: 5px;
+    border: 2px solid black;
+    margin: 5px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productos-index h2 {
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+    padding: 15px;
+}
+
+.imagen-alargada {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.mapa {
+    text-align: center;
+    margin: 50px;
+}
+
+.testimonios h2 {   
+    text-align: center;
+    margin: 50px;
+    font-size: 50px;
+}
+
+/*!------------PRODUCTOS------------*/
+
+.productos-img-index {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.productos-img-index img {
+    height: 343px;
+    width: 339px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #026e52;
+}
+
+.productos h1 { 
+    text-align: center;
+}
+
+/*!------------SERVICIOS------------*/
+
+.servicio {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.servicio img {
+    max-width: 100%;
+    height: 150px;
+}
+
+/*!------------NOSOTROS------------*/
+
+.nosotros img {
+width: 100%;
+height: 650px;
+object-fit:cover;
+}
+
+.diseno {
+    height: 300px;
+    background-color: #026e52;
+}
+
+.diseno h3 {
+    text-align: center;
+    font-size: 70px;
+    margin: 0 0 21px;
+    font-family: 'Italiana', sans-serif;
+    padding-top: 45px;
+    color: white;  
+}
+
+.diseno h4 {
+text-align: center;
+color: white;
+font-size: 20px;
+}
+
+.info {
+    background-color: #026e52;
+    margin: 0 auto;
+}
+
+.contenedor-info {
+    display: flex;   
+}
+
+.contenedor-info img {
+    padding-left: 75px;
+}
+
+.contenedor-info div,
+.contendor-info img {
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-info-texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+}
+
+.contenedor-info-texto h3 {
+    color: white;
+}
+
+.contenedor-info-texto h4 {
+    font-size: 17.5px;
+    color: white;
+}
+
+.info div {
+    height: 1000px;
+}
+
+.info div img {
+    height: 600px;
+    width: 600px;
+}
+
+/*!------------CONTACTO------------*/
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: center;
+}
+
+.wsp div,
+.ubi div,
+.mail div,
+.telefono div {
+    display: flex;
+    font-size: 34px;
+    margin-top: 70px;
+}
+
+.wsp div p,
+.ubi div p,
+.mail div p,
+.telefono div p {
+    margin-left: 15px;
+}
+
+.contacto h3 {
+    text-align: center;
+    font-size: 35px;
+    color: #026e52;
+    font-weight: bold;
+}
+
+.contacto-titulo {
+    text-align: center;
+    font-size: 25px;
+    margin: 10px;
+    padding: 10px;
+    color: #026e52;
+    font-weight: bold;
+}
+
+
+.mapa h2 {
+    color: #026e52;
+    font-weight: bold;
+    margin-bottom: 45px;
+}
+
+.contacto-direccion {
+    text-align: center; 
+}
+
+/*!------------FOOTER------------*/
+
+footer {
+    display: flex;
+    width: 100%;
+    background:#026e52;
+    justify-content: space-evenly;
+    height: 75px;
+    margin-top: 25px;
+    align-items: center;
+}
+
+footer div {
+    font-size: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+footer div:hover {
+    transform: scale(1.2);
+}
