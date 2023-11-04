@@ -355,8 +355,8 @@ footer div:hover {
     .contenedor-img-index {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
-  }
-
+    }
+}
 
 @media screen and (max-width:650px) {
     header nav ul {
@@ -368,9 +368,10 @@ footer div:hover {
     header nav ul li {
         margin:0;
     }
+    
     .contenedor-img-index {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
-
 
