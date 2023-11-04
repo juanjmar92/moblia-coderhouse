@@ -14,9 +14,6 @@
     
 }
 
-h4 {
-    margin: 0;
-}
 /*!------------HEADER------------*/
 
 header {    
@@ -57,7 +54,6 @@ body header h1 {
 
 .hero { 
     width: 100%;
-    height: calc(100vh - 130px);
     background-position: center;
     display: flex;
     align-items: center;
@@ -184,9 +180,9 @@ body header h1 {
 /*!------------NOSOTROS------------*/
 
 .nosotros img {
-width: 100%;
-height: 650px;
-object-fit:cover;
+    width: 100%;
+    height: 650px;
+    object-fit:cover;
 }
 
 .diseno {
@@ -312,7 +308,6 @@ font-size: 20px;
     margin-bottom: 0 !important;
 }
 
-
 /*!------------FOOTER------------*/
 
 footer {
@@ -342,3 +337,45 @@ footer div a {
 footer div:hover {
     transform: scale(1.2);
 }
+
+
+/*!------------MEDIA QUERY------------*/
+
+@media screen and (max-width:800px) {
+    header {
+        flex-direction: column;      
+    }
+  
+    .contenedor-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor-img-index {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      }
+
+      .carousel-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        height: auto;
+      }
+}
+
+
+
+
+@media screen and (max-width:650px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin:0;
+    }
+}
+
+
