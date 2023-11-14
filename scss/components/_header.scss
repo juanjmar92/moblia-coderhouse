@@ -1,0 +1,28 @@
+header {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+        color: #026e52;
+        font-size: 60px; 
+    }
+    nav {
+
+    ul {
+        list-style: none;
+        display: flex;
+        margin-right: 75px;
+        li {
+            margin: 10px;
+            a {
+                text-decoration: none;
+                color:#026e52;  
+                font-weight: bold;
+                font-size: 19px;
+            }
+        }
+    } 
+    }
+}

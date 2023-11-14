@@ -1,0 +1,23 @@
+footer {
+    display: flex;
+    width: 100%;
+    background:#026e52;
+    justify-content: space-evenly;
+    height: 75px;
+    margin-top: 45px;
+    align-items: center;
+    height: 100px;
+    div {
+        font-size: 40px;
+        transition: transform 0.2s;
+        &:hover {
+            transform: scale(1.2);
+        }
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            text-decoration: none;           
+        }
+    }
+}
