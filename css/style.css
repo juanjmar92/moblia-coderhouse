@@ -7,15 +7,15 @@
 /*!------------RESET------------*/
 
 * {
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
 
 /*!------------HEADER------------*/
 
-header {    
+header {
     padding: 20px;
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -23,9 +23,9 @@ header {
     align-items: center;
 }
 
-header h1 {  
+header h1 {
     color: #026e52;
-    font-size: 60px;   
+    font-size: 60px;
 }
 
 header nav ul {
@@ -40,7 +40,7 @@ header nav ul li {
 
 header nav ul li a {
     text-decoration: none;
-    color:#026e52;  
+    color: #026e52;
     font-weight: bold;
     font-size: 19px;
 }
@@ -51,7 +51,7 @@ body header h1 {
     font-weight: bolder;
 }
 
-.hero { 
+.hero {
     width: 100%;
     background-position: center;
     display: flex;
@@ -64,18 +64,18 @@ body header h1 {
     background-color: rgb(255, 255, 255);
     padding: 15px;
     color: #026e52;
-    
+
 }
 
 .contenedor-icons {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 40px;  
+    margin-top: 40px;
 }
 
 .contenedor-icons div {
     font-size: 55px;
-    margin: 20px;  
+    margin: 20px;
 }
 
 .titulos-iconos h3 {
@@ -91,6 +91,8 @@ body header h1 {
     display: flex;
     align-items: center;
 }
+
+/*!------------PRODUCTOS INDEX------------*/
 
 .contenedor-img-index {
     width: 85%;
@@ -113,7 +115,7 @@ body header h1 {
     text-align: center;
     margin: 50px;
     padding: 15px;
-    color:#026e52;
+    color: #026e52;
 }
 
 .imagen-alargada {
@@ -151,7 +153,7 @@ body header h1 {
 }
 
 .producto-card img {
-    align-self: center ;
+    align-self: center;
 }
 
 .producto-img {
@@ -159,11 +161,11 @@ body header h1 {
     width: 380px;
     display: flex;
     align-items: center;
-    
+
 }
 
 .contenedor-inf {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
@@ -187,7 +189,7 @@ button {
 
 /*!------------SERVICIOS------------*/
 
-.servicio {  
+.servicio {
     background-color: #fff;
     margin: 20px;
     padding: 20px;
@@ -217,7 +219,7 @@ button {
 .nosotros img {
     width: 100%;
     height: 400px;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .diseno {
@@ -231,7 +233,7 @@ button {
     margin: 0 0 21px;
     font-family: 'Italiana', sans-serif;
     padding-top: 45px;
-    color: white;  
+    color: white;
 }
 
 .diseno h4 {
@@ -280,12 +282,7 @@ button {
 }
 
 .contacto-direccion {
-    text-align: center; 
-}
-
-.icono-contacto {
-    display: flex;
-    align-items: center;
+    text-align: center;
 }
 
 .icono-contacto div {
@@ -306,18 +303,19 @@ button {
     border-radius: 2.5px;
 }
 
+
 /*!------------FOOTER------------*/
 
 footer {
     display: flex;
     width: 100%;
-    background:#026e52;
+    background: #026e52;
     justify-content: space-evenly;
     height: 75px;
     margin-top: 45px;
     align-items: center;
     height: 100px;
-    
+
 }
 
 footer div {
@@ -328,7 +326,7 @@ footer div {
 footer div a {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     text-decoration: none;
 }
 
@@ -340,9 +338,9 @@ footer div:hover {
 
 @media screen and (max-width:800px) {
     header {
-        flex-direction: column;      
+        flex-direction: column;
     }
-  
+
     .contenedor-icons {
         flex-direction: column;
         align-items: center;
@@ -362,11 +360,23 @@ footer div:hover {
     }
 
     header nav ul li {
-        margin:0;
+        margin: 0;
     }
-    
+
     .contenedor-img-index {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .contenedor-servicio div {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .contenedor-servicio {
+        flex-direction: column;
     }
 }
