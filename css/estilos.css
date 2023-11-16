@@ -1,5 +1,5 @@
 /*!------------GOOGLE FONTS------------*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Italiana&family=Poppins:wght@200&family=Roboto:wght@100;300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Italiana&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Italiana&family=Roboto:wght@300&display=swap");
 /*!------------RESET------------*/
@@ -51,10 +51,17 @@
 
 @media screen and (max-width: 850px) {
   .campo-formulario input {
-    width: 350px !important;
+    width: 290px !important;
     margin-bottom: 15px; }
   .campo-formulario textarea {
-    width: 350px !important; } }
+    width: 290px !important; } }
+
+@media screen and (max-width: 450px) {
+  .nosotros-content {
+    height: 800px; }
+  footer {
+    flex-direction: column;
+    height: 100% !important; } }
 
 header {
   padding: 20px;
@@ -86,7 +93,20 @@ header {
 
 /*!------INDEX-----*/
 body header h1 {
-  font-weight: bolder; }
+  font-weight: bolder;
+  margin-left: 50px; }
+
+/*!------BOOSTRAP-----*/
+.hero .carousel-caption h1 {
+  font-size: 110px;
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  -webkit-text-stroke: 2px #026e52; }
+
+.hero .carousel-caption p {
+  font-size: 40px;
+  color: #fdfdfd;
+  -webkit-text-stroke: 1px black; }
 
 /*!------ICONOS INDEX-----*/
 .icons {
@@ -109,7 +129,7 @@ body header h1 {
     display: flex;
     align-items: center; }
 
-/*!-----PRODUCTOS INDEX-----*/
+/*!-----GALERIA INDEX-----*/
 .titulo-producto {
   font-size: 50px;
   text-align: center;
@@ -158,6 +178,9 @@ body header h1 {
   -webkit-box-shadow: 6px 10px 37px -8px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 6px 10px 37px -8px rgba(0, 0, 0, 0.75); }
 
+.titulo-productos {
+  font-size: 50px; }
+
 .productos {
   display: flex;
   flex-wrap: wrap;
@@ -184,6 +207,9 @@ body header h1 {
       flex-direction: column;
       align-items: center;
       padding: 10px; }
+      .productos .producto-card .contenedor-inf h2 {
+        font-size: 25px;
+        color: black; }
       .productos .producto-card .contenedor-inf button {
         padding: 10px 20px;
         border: none;
@@ -202,6 +228,12 @@ body header h1 {
           border: 1px solid #ccc; }
 
 /*!-----PAGINA SERVICIOS-----*/
+.servicio-titulo {
+  font-size: 50px;
+  color: #026e52;
+  text-align: center;
+  margin-bottom: 50px; }
+
 .servicio {
   background-color: #ffffff;
   margin: 20px;
@@ -218,6 +250,8 @@ body header h1 {
     .servicio .contenedor-servicio div {
       text-align: center;
       margin-left: 300px; }
+      .servicio .contenedor-servicio div h2 {
+        font-size: 32px; }
 
 /*!-----PAGINA NOSOTROS-----*/
 .nosotros {
@@ -245,8 +279,8 @@ body header h1 {
       text-align: center;
       z-index: 2;
       color: #ffffff; }
-      .nosotros-content .texto-overlay h2 {
-        font-size: 50px;
+      .nosotros-content .texto-overlay h1 {
+        font-size: 70px;
         margin-bottom: 20px; }
     .nosotros-content .historia {
       font-size: 20px;
@@ -270,13 +304,22 @@ body header h1 {
   font-size: 50px;
   margin-top: 70px;
   justify-content: flex-start; }
+  .icono-contacto div {
+    display: flex;
+    align-items: center; }
+    .icono-contacto div i {
+      margin-right: 20px; }
+    .icono-contacto div h2 {
+      margin-bottom: 0;
+      font-size: 24px; }
 
-.contacto h3 {
+.contacto h1 {
   text-align: center;
   font-size: 35px;
   color: #026e52;
   font-weight: bold;
-  margin-top: 50px; }
+  margin-top: 50px;
+  margin-bottom: 50px; }
 
 .contacto-titulo {
   text-align: center;
@@ -285,54 +328,52 @@ body header h1 {
   color: #026e52;
   font-weight: bold; }
 
+.mapa h2 {
+  color: #026e52;
+  font-weight: bold;
+  margin-bottom: 65px;
+  margin-top: 65px; }
+
 .contacto-direccion,
 .formulario-contacto {
   text-align: center; }
 
-.icono-contacto div {
-  display: flex;
-  align-items: center; }
-  .icono-contacto div i {
-    margin-right: 20px; }
-  .icono-contacto div h4 {
-    margin-bottom: 0; }
+.mapa div {
+  border: 1.5px solid #026e52;
+  border-radius: 2.5px;
+  margin: 75px; }
 
 .formulario-contacto {
   margin-left: 50px; }
-  .formulario-contacto h3 {
+  .formulario-contacto h2 {
     font-size: 25px;
     color: #026e52;
     font-weight: bold;
-    margin-bottom: 20px; }
+    margin-bottom: 50px; }
   .formulario-contacto form {
     display: flex;
     flex-direction: column;
     align-items: center; }
-
-.campo-formulario {
-  margin-bottom: 20px; }
-  .campo-formulario input,
-  .campo-formulario textarea {
-    width: 680px;
-    padding: 10px;
-    border: 1.5px solid #026e52;
-    border-radius: 10px;
-    font-size: 16px; }
-  .campo-formulario button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ffffff;
-    color: #026e52;
-    border: 1.5px solid #026e52;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-weight: bold; }
-    .campo-formulario button:hover {
+  .formulario-contacto .campo-formulario {
+    margin-bottom: 20px; }
+    .formulario-contacto .campo-formulario input,
+    .formulario-contacto .campo-formulario textarea {
+      width: 680px;
+      padding: 10px;
+      border: 1.5px solid rgba(2, 110, 82, 0.6);
+      border-radius: 10px;
+      font-size: 16px; }
+    .formulario-contacto .campo-formulario button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
       background-color: #026e52;
-      color: #ffffff;
-      border: 1px solid #ffffff; }
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease; }
+      .formulario-contacto .campo-formulario button:hover {
+        background-color: #ffffff; }
 
 .mapa div {
   border: 1.5px solid #026e52;
@@ -343,7 +384,8 @@ body header h1 {
   color: #026e52;
   font-weight: bold;
   margin-bottom: 65px;
-  margin-top: 65px; }
+  margin-top: 65px;
+  text-align: center; }
 
 footer {
   display: flex;
