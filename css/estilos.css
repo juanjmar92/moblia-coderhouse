@@ -29,7 +29,9 @@
     grid-template-columns: 1fr !important;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
   .diseno {
-    height: 100% !important; } }
+    height: 100% !important; }
+  .contenedor-icons div {
+    margin: 0 !important; } }
 
 @media screen and (max-width: 900px) {
   .contenedor-servicio div {
@@ -38,6 +40,14 @@
 @media screen and (max-width: 600px) {
   .contenedor-servicio {
     flex-direction: column; } }
+
+@media screen and (max-width: 1100px) {
+  .contenedor-contacto {
+    flex-direction: column; } }
+
+@media screen and (max-width: 400px) {
+  .nosotros-content {
+    height: 1000px; } }
 
 header {
   padding: 20px;
@@ -58,7 +68,13 @@ header {
         text-decoration: none;
         color: #026e52;
         font-weight: bold;
-        font-size: 19px; }
+        font-size: 19px;
+        transition: color 0.3s ease; }
+        header nav ul li a:hover {
+          color: #fff;
+          background-color: #026e52;
+          border-radius: 10px;
+          padding: 5px; }
 
 /*!------INDEX-----*/
 body header h1 {
@@ -86,34 +102,53 @@ body header h1 {
     align-items: center; }
 
 /*!-----PRODUCTOS INDEX-----*/
-.productos-index h2 {
+.titulo-producto {
   font-size: 50px;
   text-align: center;
   margin: 50px;
   padding: 15px;
   color: #026e52; }
 
-.productos-index .contenedor-img-index {
-  width: 85%;
+.contenedor-img-index {
+  width: 90%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 25px;
   margin: 0 auto; }
-  .productos-index .contenedor-img-index img {
+  .contenedor-img-index div {
+    position: relative; }
+    .contenedor-img-index div h3 {
+      position: absolute;
+      bottom: 0;
+      color: #ffffff;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 0;
+      background-color: rgba(2, 110, 81, 0.6);
+      border-radius: 5px; }
+  .contenedor-img-index img {
     border: 1px solid #026e52;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 5px; }
-    .productos-index .contenedor-img-index img.imagen-alargada {
-      grid-row-start: 1;
-      grid-row-end: 3; }
+  .contenedor-img-index .imagen-alargada {
+    grid-row: span 2; }
 
 /*!-----PAGINA PRODUCTOS-----*/
 .titulo-productos {
   text-align: center;
   color: #026e52;
   margin-bottom: 50px; }
+
+.productos .producto-card:hover {
+  transition: 2s; }
+
+.productos .producto-card:hover {
+  transform: scale(1.1);
+  box-shadow: 6px 10px 37px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 6px 10px 37px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 6px 10px 37px -8px rgba(0, 0, 0, 0.75); }
 
 .productos {
   display: flex;
@@ -124,7 +159,7 @@ body header h1 {
     flex-wrap: wrap;
     flex-direction: column;
     border: 1px solid #ccc;
-    margin: 10px;
+    margin: 25px;
     padding-bottom: 10px;
     text-align: center;
     background-color: #fff;
@@ -142,17 +177,21 @@ body header h1 {
       align-items: center;
       padding: 10px; }
       .productos .producto-card .contenedor-inf button {
-        background-color: #026e52;
-        color: white;
-        padding: 8px 16px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 14px;
-        margin-top: 8px;
-        cursor: pointer;
+        padding: 10px 20px;
         border: none;
-        border-radius: 4px; }
+        border-radius: 5px;
+        background-color: #ffffff;
+        color: #026e52;
+        border: 1.5px solid #026e52;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-weight: bold;
+        transition: 0.7s; }
+        .productos .producto-card .contenedor-inf button:hover {
+          background-color: #026e52;
+          color: #ffffff;
+          border: 1px solid #ccc; }
 
 /*!-----PAGINA SERVICIOS-----*/
 .servicio {
@@ -173,37 +212,56 @@ body header h1 {
       margin-left: 300px; }
 
 /*!-----PAGINA NOSOTROS-----*/
-.nosotros img {
-  width: 100%;
-  height: 400px;
-  object-fit: cover; }
-
-.diseno {
-  height: 300px;
-  background-color: #026e52; }
-  .diseno h3 {
-    text-align: center;
-    font-size: 70px;
-    margin: 0 0 21px;
-    font-family: 'Italiana', sans-serif;
-    padding-top: 45px;
-    color: white; }
-  .diseno h4 {
-    text-align: center;
-    color: white;
-    font-size: 20px; }
+.nosotros {
+  justify-content: center; }
+  .nosotros img {
+    width: 100%;
+    height: calc(90vh - 120px);
+    object-fit: cover; }
+  .nosotros-content {
+    position: relative;
+    justify-content: center; }
+    .nosotros-content .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(2, 110, 82, 0.6);
+      z-index: 1; }
+    .nosotros-content .texto-overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 2;
+      color: #ffffff; }
+      .nosotros-content .texto-overlay h2 {
+        font-size: 50px;
+        margin-bottom: 20px; }
+    .nosotros-content .historia {
+      font-size: 20px;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: 0 auto; }
 
 /*!-----PAGINA CONTACTO-----*/
 .contenedor-contacto {
   display: flex;
-  justify-content: center; }
+  justify-content: space-evenly;
+  align-items: center; }
+
+.icono-contacto,
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
 
 .icono-contacto {
-  display: flex;
   font-size: 50px;
   margin-top: 70px;
-  justify-content: flex-start;
-  align-items: center; }
+  justify-content: flex-start; }
 
 .contacto h3 {
   text-align: center;
@@ -212,43 +270,91 @@ body header h1 {
   font-weight: bold;
   margin-top: 50px; }
 
+.contacto-titulo {
+  text-align: center;
+  font-size: 25px;
+  padding: 10px;
+  color: #026e52;
+  font-weight: bold; }
+
+.contacto-direccion,
+.formulario-contacto {
+  text-align: center; }
+
+.icono-contacto div {
+  display: flex;
+  align-items: center; }
+  .icono-contacto div i {
+    margin-right: 20px; }
+  .icono-contacto div h4 {
+    margin-bottom: 0; }
+
+.formulario-contacto {
+  margin-left: 50px; }
+  .formulario-contacto h3 {
+    font-size: 25px;
+    color: #026e52;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  .formulario-contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.campo-formulario {
+  margin-bottom: 20px; }
+  .campo-formulario input,
+  .campo-formulario textarea {
+    width: 680px;
+    padding: 10px;
+    border: 1.5px solid #026e52;
+    border-radius: 10px;
+    font-size: 16px; }
+  .campo-formulario button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #026e52;
+    border: 1.5px solid #026e52;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold; }
+    .campo-formulario button:hover {
+      background-color: #026e52;
+      color: #ffffff;
+      border: 1px solid #ccc; }
+
+.mapa div {
+  border: 1.5px solid #026e52;
+  border-radius: 2.5px;
+  margin: 75px; }
+
 .mapa h2 {
   color: #026e52;
   font-weight: bold;
   margin-bottom: 65px;
-  margin-top: 65px;
-  text-align: center; }
+  margin-top: 65px; }
 
-.mapa div {
-  border: 1.5px solid #026e52;
-  border-radius: 2.5px; }
-
-.icono-contacto {
-  display: flex;
-  align-items: center; }
-  .icono-contacto div {
-    display: flex;
-    align-items: center; }
-    .icono-contacto div i {
-      margin-right: 20px; }
-    .icono-contacto div h4 {
-      margin-bottom: 0; }
-
+/* Estilos para el footer */
 footer {
   display: flex;
   width: 100%;
   background: #026e52;
   justify-content: space-evenly;
-  margin-top: 45px;
   align-items: center;
-  height: 100px; }
+  height: 100px;
+  margin-top: 45px; }
   footer div {
     font-size: 40px;
-    transition: transform 0.2s; }
+    padding: 5px; }
     footer div a {
       display: flex;
       justify-content: center;
       align-items: center;
-      text-decoration: none; }
-    footer div:hover {
-      transform: scale(1.2); }
+      text-decoration: none;
+      color: #ffffff;
+      transition: transform 0.2s; }
+      footer div a:hover {
+        transform: scale(1.2); }

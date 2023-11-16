@@ -1,25 +1,28 @@
+/* Estilos para el footer */
 footer {
     display: flex;
     width: 100%;
     background: #026e52;
     justify-content: space-evenly;
-    margin-top: 45px;
     align-items: center;
-    height: 100px;
+    height: 100px; // Ajuste de la altura
+    margin-top: 45px;
 
     div {
         font-size: 40px;
-        transition: transform 0.2s;
+        padding: 5px; // Espaciado interno
 
         a {
             display: flex;
             justify-content: center;
             align-items: center;
             text-decoration: none;
-        }
+            color: #ffffff; // Color del icono
+            transition: transform 0.2s; // Transición del efecto
 
-        &:hover {
-            transform: scale(1.2);
+            &:hover {
+                transform: scale(1.2); // Efecto de escala al pasar el mouse
+            }
         }
     }
 }
