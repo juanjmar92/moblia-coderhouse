@@ -225,7 +225,7 @@ body header h1 {
         .productos .producto-card .contenedor-inf button:hover {
           background-color: #026e52;
           color: #ffffff;
-          border: 1px solid #ccc; }
+          border: 1px solid #ffffff; }
 
 /*!-----PAGINA SERVICIOS-----*/
 .servicio-titulo {
@@ -373,7 +373,10 @@ body header h1 {
       cursor: pointer;
       transition: background-color 0.3s ease; }
       .formulario-contacto .campo-formulario button:hover {
-        background-color: #ffffff; }
+        background-color: #ffffff;
+        color: #026e52;
+        border: 2.5px solid #026e52;
+        transition: 1s; }
 
 .mapa div {
   border: 1.5px solid #026e52;

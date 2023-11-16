@@ -184,8 +184,8 @@ body {
 
                 &:hover {
                     background-color: $color-primario;
-                    color: #ffffff;
-                    border: 1px solid #ccc;
+                    color: $color-secundario;
+                    border: 1px solid $color-secundario;
                 }
             }
         }
@@ -390,6 +390,9 @@ body {
 
             &:hover {
                 background-color: $color-secundario;
+                color: $color-primario;
+                border: 2.5px solid $color-primario;
+                transition: 1s;
             }
         }
     }
