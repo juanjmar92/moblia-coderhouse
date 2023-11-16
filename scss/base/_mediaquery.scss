@@ -1,4 +1,4 @@
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
     header {
         flex-direction: column;
     }
@@ -91,4 +91,37 @@
         flex-direction: column;
         height: 100% !important;
     }
+}
+
+@media screen and (max-width: 1350px) {
+    .carousel-caption h1 {
+        font-size: 50px !important;
+    }
+
+    .carousel-caption p {
+        font-size: 40px !important;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+    .carousel-caption h1 {
+        font-size: 20px !important;
+    }
+
+    .carousel-caption p {
+        font-size: 15px !important;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .carousel-caption h1 {
+        font-size: 10px !important;
+    }
+
+    .carousel-caption p {
+        font-size: 5px !important;
+    }
+
 }
