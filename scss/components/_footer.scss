@@ -1,28 +1,33 @@
-/* Estilos para el footer */
 footer {
     display: flex;
     width: 100%;
-    background: #026e52;
+    background: $color-primario;
     justify-content: space-evenly;
     align-items: center;
-    height: 100px; // Ajuste de la altura
+    height: 130px;
     margin-top: 45px;
 
     div {
         font-size: 40px;
-        padding: 5px; // Espaciado interno
+        transition: transform 0.2s;
+        padding: 5px;
 
         a {
             display: flex;
             justify-content: center;
             align-items: center;
             text-decoration: none;
-            color: #ffffff; // Color del icono
-            transition: transform 0.2s; // Transición del efecto
-
-            &:hover {
-                transform: scale(1.2); // Efecto de escala al pasar el mouse
-            }
+            color: $color-secundario;
         }
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    h3 {
+        color: $color-secundario;
+        font-size: 22px;
+        margin-bottom: 0;
     }
 }

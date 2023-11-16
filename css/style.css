@@ -32,6 +32,7 @@ header nav ul {
     list-style: none;
     display: flex;
     margin-right: 75px;
+    margin-bottom: 0;
 }
 
 header nav ul li {
@@ -432,6 +433,12 @@ footer div a {
     color: #ffffff;
 }
 
+footer h3 {
+    color: #ccc;
+    font-size: 22px;
+    margin-bottom: 0;
+}
+
 footer div:hover {
     transform: scale(1.2);
 }
@@ -494,8 +501,20 @@ footer div:hover {
     }
 }
 
-@media screen and (max-width:900px) {
+@media screen and (max-width:1200px) {
     .contenedor-contacto {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    .campo-formulario input {
+        width: 350px;
+        margin-bottom: 15px;
+    }
+
+    .campo-formulario textarea {
+        width: 350px;
     }
 }

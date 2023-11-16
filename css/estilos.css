@@ -41,17 +41,24 @@
   .contenedor-servicio {
     flex-direction: column; } }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 600px) {
+  .contenedor-servicio {
+    flex-direction: column; } }
+
+@media screen and (max-width: 1200px) {
   .contenedor-contacto {
     flex-direction: column; } }
 
-@media screen and (max-width: 400px) {
-  .nosotros-content {
-    height: 1000px; } }
+@media screen and (max-width: 850px) {
+  .campo-formulario input {
+    width: 350px !important;
+    margin-bottom: 15px; }
+  .campo-formulario textarea {
+    width: 350px !important; } }
 
 header {
   padding: 20px;
-  background-color: white;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -61,9 +68,10 @@ header {
   header nav ul {
     list-style: none;
     display: flex;
-    margin-right: 75px; }
+    margin-right: 75px;
+    margin-bottom: 0; }
     header nav ul li {
-      margin: 10px; }
+      margin: 18px; }
       header nav ul li a {
         text-decoration: none;
         color: #026e52;
@@ -73,8 +81,8 @@ header {
         header nav ul li a:hover {
           color: #fff;
           background-color: #026e52;
-          border-radius: 10px;
-          padding: 5px; }
+          border-radius: 50px;
+          padding: 10px; }
 
 /*!------INDEX-----*/
 body header h1 {
@@ -82,7 +90,7 @@ body header h1 {
 
 /*!------ICONOS INDEX-----*/
 .icons {
-  background-color: white;
+  background-color: #ffffff;
   padding: 15px;
   color: #026e52; }
   .icons .contenedor-icons {
@@ -124,7 +132,7 @@ body header h1 {
       width: 100%;
       padding: 10px;
       margin-bottom: 0;
-      background-color: rgba(2, 110, 81, 0.6);
+      background-color: rgba(2, 110, 82, 0.6);
       border-radius: 5px; }
   .contenedor-img-index img {
     border: 1px solid #026e52;
@@ -162,7 +170,7 @@ body header h1 {
     margin: 25px;
     padding-bottom: 10px;
     text-align: center;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 5px;
     border: 0.5px solid #026e52; }
     .productos .producto-card img.producto-img {
@@ -195,7 +203,7 @@ body header h1 {
 
 /*!-----PAGINA SERVICIOS-----*/
 .servicio {
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 20px;
   padding: 20px;
   box-shadow: 0 0 8.5px #026e52;
@@ -227,7 +235,7 @@ body header h1 {
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(2, 110, 82, 0.6);
+      background-color: #045c4281;
       z-index: 1; }
     .nosotros-content .texto-overlay {
       position: absolute;
@@ -324,7 +332,7 @@ body header h1 {
     .campo-formulario button:hover {
       background-color: #026e52;
       color: #ffffff;
-      border: 1px solid #ccc; }
+      border: 1px solid #ffffff; }
 
 .mapa div {
   border: 1.5px solid #026e52;
@@ -337,24 +345,27 @@ body header h1 {
   margin-bottom: 65px;
   margin-top: 65px; }
 
-/* Estilos para el footer */
 footer {
   display: flex;
   width: 100%;
   background: #026e52;
   justify-content: space-evenly;
   align-items: center;
-  height: 100px;
+  height: 130px;
   margin-top: 45px; }
   footer div {
     font-size: 40px;
+    transition: transform 0.2s;
     padding: 5px; }
     footer div a {
       display: flex;
       justify-content: center;
       align-items: center;
       text-decoration: none;
-      color: #ffffff;
-      transition: transform 0.2s; }
-      footer div a:hover {
-        transform: scale(1.2); }
+      color: #ffffff; }
+    footer div:hover {
+      transform: scale(1.2); }
+  footer h3 {
+    color: #ffffff;
+    font-size: 22px;
+    margin-bottom: 0; }
