@@ -1,3 +1,28 @@
+@media screen and (max-width: 1350px) {
+    .carousel-caption h1 {
+        font-size: 50px !important;
+    }
+
+    .carousel-caption p {
+        font-size: 40px !important;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+    .contenedor-contacto {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .contenedor-servicio {
+        div {
+            margin-left: 0 !important;
+        }
+    }
+}
+
 @media screen and (max-width:900px) {
     header {
         flex-direction: column;
@@ -13,6 +38,30 @@
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
+}
+
+@media screen and (max-width: 860px) {
+    .carousel-caption h1 {
+        font-size: 20px !important;
+    }
+
+    .carousel-caption p {
+        font-size: 15px !important;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+    .campo-formulario {
+        input {
+            width: 290px !important;
+            margin-bottom: 15px;
+        }
+
+        textarea {
+            width: 290px !important;
+        }
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -43,14 +92,6 @@
     }
 }
 
-@media screen and (max-width: 900px) {
-    .contenedor-servicio {
-        div {
-            margin-left: 0 !important;
-        }
-    }
-}
-
 @media screen and (max-width:600px) {
     .contenedor-servicio {
         flex-direction: column;
@@ -63,25 +104,6 @@
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .contenedor-contacto {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .campo-formulario {
-        input {
-            width: 290px !important;
-            margin-bottom: 15px;
-        }
-
-        textarea {
-            width: 290px !important;
-        }
-    }
-}
-
 @media screen and (max-width: 450px) {
     .nosotros-content {
         height: 800px;
@@ -91,28 +113,6 @@
         flex-direction: column;
         height: 100% !important;
     }
-}
-
-@media screen and (max-width: 1350px) {
-    .carousel-caption h1 {
-        font-size: 50px !important;
-    }
-
-    .carousel-caption p {
-        font-size: 40px !important;
-    }
-
-}
-
-@media screen and (max-width: 860px) {
-    .carousel-caption h1 {
-        font-size: 20px !important;
-    }
-
-    .carousel-caption p {
-        font-size: 15px !important;
-    }
-
 }
 
 @media screen and (max-width: 400px) {
