@@ -1,5 +1,8 @@
 <h1 align="center">Hi 👋, I'm Juanjo</h1>
-<h3 align="center">This repository houses the source code of my first website, where I experiment with various web design and development techniques using the following technologies: - **HTML**: The foundational structure of my website. - **CSS with Sass and Bootstrap**: Implementing styles and design using Sass for better organization and harnessing Bootstrap for responsive and user-friendly layouts.</h3>
+<h3 align="center">Welcome to my first website repository! 🚀 Here, I explore diverse web design and development techniques using:
+
+HTML: The backbone of my site's structure.
+CSS with Sass and Bootstrap: Sass for better organization and Bootstrap for responsive, user-friendly layouts.</h3>
 
 - 🔭 I’m currently working on [Moblia](https://moblia.netlify.app/)
 
