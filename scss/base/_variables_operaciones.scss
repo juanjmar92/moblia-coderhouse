@@ -3,15 +3,28 @@
 $color-primario: #026e52;
 $color-secundario: #ffffff;
 
-//* COLORES
-
-$colores: red,
-    green,
-    blue,
-    tomato,
-    pink,
-    gray;
-
-//* EXTENDS
-
 //* MIXINS
+
+@mixin contenedor-flex($justify: center, $align: center) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+.icons {
+    background-color: $color-secundario;
+    padding: 15px;
+    color: $color-primario;
+
+    .contenedor-icons {
+        @include contenedor-flex(space-evenly);
+        margin-top: 40px;
+
+        div {
+            font-size: 55px;
+            margin: 20px;
+        }
+    }
+
+}
