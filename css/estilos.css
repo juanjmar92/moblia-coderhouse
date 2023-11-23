@@ -22,78 +22,6 @@
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif; }
 
-@media screen and (max-width: 1350px) {
-  .carousel-caption h1 {
-    font-size: 50px !important; }
-  .carousel-caption p {
-    font-size: 40px !important; } }
-
-@media screen and (max-width: 1200px) {
-  .contenedor-contacto {
-    flex-direction: column; } }
-
-@media screen and (max-width: 900px) {
-  .contenedor-servicio div {
-    margin-left: 0 !important; } }
-
-@media screen and (max-width: 900px) {
-  header {
-    flex-direction: column; }
-  .contenedor-icons {
-    flex-direction: column;
-    align-items: center; }
-  .contenedor-img-index {
-    grid-template-columns: 1fr 1fr !important;
-    grid-template-rows: 1fr 1fr 1fr 1fr; } }
-
-@media screen and (max-width: 860px) {
-  .carousel-caption h1 {
-    font-size: 20px !important; }
-  .carousel-caption p {
-    font-size: 15px !important; } }
-
-@media screen and (max-width: 850px) {
-  .campo-formulario input {
-    width: 290px !important;
-    margin-bottom: 15px; }
-  .campo-formulario textarea {
-    width: 290px !important; } }
-
-@media screen and (max-width: 650px) {
-  header nav ul {
-    flex-direction: column;
-    text-align: center; }
-    header nav ul li {
-      margin: 0 !important; }
-  .contenedor-img-index {
-    grid-template-columns: 1fr !important;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
-  .diseno {
-    height: 100% !important; }
-  .contenedor-icons div {
-    margin: 0 !important; } }
-
-@media screen and (max-width: 600px) {
-  .contenedor-servicio {
-    flex-direction: column; } }
-
-@media screen and (max-width: 600px) {
-  .contenedor-servicio {
-    flex-direction: column; } }
-
-@media screen and (max-width: 450px) {
-  .nosotros-content {
-    height: 800px; }
-  footer {
-    flex-direction: column;
-    height: 100% !important; } }
-
-@media screen and (max-width: 400px) {
-  .carousel-caption h1 {
-    font-size: 10px !important; }
-  .carousel-caption p {
-    font-size: 5px !important; } }
-
 header {
   padding: 20px;
   background-color: #ffffff;
@@ -129,7 +57,7 @@ body header h1 {
 
 /*!------BOOSTRAP-----*/
 .hero .carousel-caption h1 {
-  font-size: 125px;
+  font-size: 100px;
   color: #ffffff;
   font-family: 'Poppins', sans-serif;
   -webkit-text-stroke: 2px #026e52; }
@@ -446,3 +374,81 @@ footer {
     color: #ffffff;
     font-size: 22px;
     margin-bottom: 0; }
+
+@media screen and (max-width: 1350px) {
+  .carousel-caption h1 {
+    font-size: 50px !important; }
+  .carousel-caption p {
+    font-size: 40px !important; } }
+
+@media screen and (max-width: 1200px) {
+  .contenedor-contacto {
+    flex-direction: column; } }
+
+@media screen and (max-width: 900px) {
+  .contenedor-servicio div {
+    margin-left: 0 !important; } }
+
+@media screen and (max-width: 900px) {
+  header {
+    flex-direction: column; }
+  .contenedor-icons {
+    flex-direction: column;
+    align-items: center; }
+  .contenedor-img-index {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr; } }
+
+@media screen and (max-width: 860px) {
+  .carousel-caption h1 {
+    font-size: 20px !important; }
+  .carousel-caption p {
+    font-size: 15px !important; } }
+
+@media screen and (max-width: 850px) {
+  .campo-formulario input {
+    width: 290px !important;
+    margin-bottom: 15px; }
+  .campo-formulario textarea {
+    width: 290px !important; } }
+
+@media screen and (max-width: 650px) {
+  header nav ul {
+    flex-direction: column;
+    text-align: center; }
+    header nav ul li {
+      margin: 0; }
+  .contenedor-img-index {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
+  .diseno {
+    height: 100% !important; }
+  .contenedor-icons div {
+    margin: 0 !important; } }
+
+@media screen and (max-width: 600px) {
+  .contenedor-servicio {
+    flex-direction: column; } }
+
+@media screen and (max-width: 600px) {
+  .contenedor-servicio {
+    flex-direction: column; } }
+
+@media screen and (max-width: 450px) {
+  .nosotros-content {
+    height: 800px; }
+  footer {
+    flex-direction: column;
+    height: 100% !important; } }
+
+@media screen and (max-width: 400px) {
+  .carousel-caption h1 {
+    font-size: 20px !important; }
+  .carousel-caption p {
+    font-size: 10px !important; } }
+
+@media screen and (max-width: 350px) {
+  .carousel-caption h1 {
+    font-size: 10px !important; }
+  .carousel-caption p {
+    font-size: 5px !important; } }

@@ -34,7 +34,7 @@
     }
 
     .contenedor-img-index {
-        grid-template-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
     }
 
@@ -72,7 +72,7 @@
                 text-align: center;
 
                 li {
-                    margin: 0 !important;
+                    margin: 0;
                 }
             }
         }
@@ -116,6 +116,17 @@
 }
 
 @media screen and (max-width: 400px) {
+    .carousel-caption h1 {
+        font-size: 20px !important;
+    }
+
+    .carousel-caption p {
+        font-size: 10px !important;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
     .carousel-caption h1 {
         font-size: 10px !important;
     }
