@@ -42,11 +42,11 @@
 
 @media screen and (max-width: 860px) {
     .carousel-caption h1 {
-        font-size: 20px !important;
+        font-size: 30px !important;
     }
 
     .carousel-caption p {
-        font-size: 15px !important;
+        font-size: 17px !important;
     }
 
 }
@@ -90,6 +90,17 @@
     .contenedor-icons div {
         margin: 0 !important;
     }
+}
+
+@media screen and (max-width: 650px) {
+    .carousel-caption h1 {
+        font-size: 25px !important;
+    }
+
+    .carousel-caption p {
+        font-size: 12px !important;
+    }
+
 }
 
 @media screen and (max-width:600px) {
